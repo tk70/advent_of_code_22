@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let f = fs::read_to_string("input.txt");
+    let f = fs::read_to_string("day4/input.txt");
     let file = f.unwrap();
     let sum: usize = file
         .split(|c: char| !c.is_numeric())

@@ -34,7 +34,7 @@ fn score(my_move: Move, opponent_move: Move) -> isize {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let file = fs::read_to_string("input.txt")?;
+    let file = fs::read_to_string("day2/input.txt")?;
     let lines = file.split("\n").filter(|&line| !line.is_empty());
     let mut sum = 0;
     for line in lines {

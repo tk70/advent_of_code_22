@@ -12,7 +12,7 @@ fn get_priority(c: char) -> usize {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let file = fs::read_to_string("input.txt")?;
+    let file = fs::read_to_string("day3_2/input.txt")?;
     let sum: usize = file
         .split('\n')
         .filter(|line| !line.is_empty())
@@ -23,8 +23,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             let line2 = elve_group[1];
             let line3 = elve_group[2];
             for ch in line1.chars() {
-                if line2.contains(ch) && line3.contains(ch)
-                {
+                if line2.contains(ch) && line3.contains(ch) {
                     return get_priority(ch);
                 }
             }

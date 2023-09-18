@@ -1,0 +1,23 @@
+[package]
+name = "advent_of_code_22"
+version = "0.1.0"
+authors = ["jakub Turowski <jakubturowski92@gmail.com>"]
+edition = "2021"
+
+[lib]
+path = "common/src/data.rs"
+
+[workspace]
+members = [
+    "day1",
+    "day1_2",
+    "day2",
+    "day2_2",
+    "day3",
+    "day3_2",
+    "day4",
+    "day4_2",
+    "day5",
+    "day5_2",
+]
+exclude = ["playground"]

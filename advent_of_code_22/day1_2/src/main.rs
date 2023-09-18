@@ -1,10 +1,9 @@
- 
-use std::fs::File;
-use std::io::{BufReader, BufRead};
 use std::collections::BinaryHeap;
+use std::fs::File;
+use std::io::{BufRead, BufReader};
 
 fn main() -> std::io::Result<()> {
-    let file = File::open("input.txt")?;
+    let file = File::open("day1_2/input.txt")?;
     let reader = BufReader::new(file);
 
     let mut sum: i32 = 0;
@@ -16,8 +15,7 @@ fn main() -> std::io::Result<()> {
         if line.trim().is_empty() {
             heap.push(sum);
             sum = 0;
-        }
-        else {
+        } else {
             let number: i32 = line.parse().unwrap();
             sum += number;
         }

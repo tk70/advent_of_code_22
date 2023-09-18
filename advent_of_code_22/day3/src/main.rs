@@ -12,7 +12,7 @@ fn get_priority(c: char) -> isize {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let file = fs::read_to_string("input.txt")?;
+    let file = fs::read_to_string("day3/input.txt")?;
     let sum: isize = file
         .split('\n')
         .filter(|line| !line.is_empty())

@@ -11,8 +11,8 @@ fn main() {
         .chunks_exact(4)
         .map(|group| {
             let ((al, ar), (bl, br)) = ((group[0], group[1]), (group[2], group[3]));
-            let double_distance = (al+ar).abs_diff((bl+br));
-            let size_sum =  ar.abs_diff(al) + br.abs_diff(bl);
+            let double_distance = (al + ar).abs_diff(bl + br);
+            let size_sum = ar.abs_diff(al) + br.abs_diff(bl);
             (double_distance <= size_sum) as usize
         })
         .sum();
