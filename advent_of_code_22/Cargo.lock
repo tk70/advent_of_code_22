@@ -25,10 +25,16 @@ version = "0.1.0"
 [[package]]
 name = "day3"
 version = "0.1.0"
+dependencies = [
+ "advent_of_code_22",
+]
 
 [[package]]
 name = "day3_2"
 version = "0.1.0"
+dependencies = [
+ "advent_of_code_22",
+]
 
 [[package]]
 name = "day4"
@@ -47,6 +53,13 @@ dependencies = [
 
 [[package]]
 name = "day5_2"
+version = "0.1.0"
+dependencies = [
+ "advent_of_code_22",
+]
+
+[[package]]
+name = "day6"
 version = "0.1.0"
 dependencies = [
  "advent_of_code_22",

@@ -1,4 +1,4 @@
-use advent_of_code_22::Data;
+use advent_of_code_22::data::Data;
 use std::collections::VecDeque;
 use std::fs::File;
 use std::io::{BufRead, BufReader};

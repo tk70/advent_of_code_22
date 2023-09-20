@@ -5,7 +5,7 @@ authors = ["jakub Turowski <jakubturowski92@gmail.com>"]
 edition = "2021"
 
 [lib]
-path = "common/src/data.rs"
+path = "common/src/common.rs"
 
 [workspace]
 members = [
@@ -19,5 +19,6 @@ members = [
     "day4_2",
     "day5",
     "day5_2",
+    "day6",
 ]
 exclude = ["playground"]
