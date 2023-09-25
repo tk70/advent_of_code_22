@@ -64,3 +64,7 @@ version = "0.1.0"
 dependencies = [
  "advent_of_code_22",
 ]
+
+[[package]]
+name = "day7"
+version = "0.1.0"
